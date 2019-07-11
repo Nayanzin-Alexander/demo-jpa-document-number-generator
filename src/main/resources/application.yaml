@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+  datasource:
+    url: "jdbc:postgresql://localhost:5433/postgres"
+    name: "postgres"
+    password: "password"
+    hikari:
+      connection-timeout: 60000
+      maximum-pool-size: 10
+      username: "postgres"
+      password: "password"
+      jdbc-url: "jdbc:postgresql://localhost:5433/postgres"
